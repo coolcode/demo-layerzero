@@ -1,0 +1,14 @@
+{
+	"dependencies": {
+		"@layerzerolabs/lz-evm-messagelib-v2": "^2.0.11",
+		"@layerzerolabs/lz-evm-oapp-v2": "^2.0.11",
+		"@layerzerolabs/lz-evm-protocol-v2": "^2.0.11",
+		"@layerzerolabs/lz-evm-v1-0.7": "^2.0.11",
+		"@openzeppelin/contracts": "^4.8.1",
+		"@openzeppelin/contracts-upgradeable": "^4.8.1"
+	},
+	"devDependencies": {
+		"solidity-bytes-utils": "0.8.0",
+    "hardhat-deploy": "^0.11.44"
+	}
+}

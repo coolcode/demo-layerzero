@@ -1,0 +1,18 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+verbosity = 3
+optimizer = true
+optimizer_runs = 20_000
+allow_paths = ["../.yarn/unplugged", "../node_modules"]
+remappings = [
+  # note: map to package level only, required for pnp-berry to work with foundry
+  # ok - solidity-stringutils/=node_modules/solidity-stringutils/
+  # not ok - solidity-stringutils/=node_modules/solidity-stringutils/src/
+  '@openzeppelin/contracts/=node_modules/@openzeppelin/contracts/',
+  '@openzeppelin/contracts-upgradeable/=node_modules/@openzeppelin/contracts-upgradeable/',
+  'solidity-bytes-utils/=node_modules/solidity-bytes-utils/',
+  'hardhat-deploy/=node_modules/hardhat-deploy/',
+  '@layerzerolabs/=node_modules/@layerzerolabs/',
+]
